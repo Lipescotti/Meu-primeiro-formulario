@@ -23,7 +23,11 @@ body
     font-family: var(--fonte_principal);
     background-color: var(--corFundo1);
     color: var(--corLetra1);
-    line-height: clamp(1, 0.5vw, 2);
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* Cabeçario da pagina */
@@ -181,4 +185,17 @@ input.success
 input.error 
 {
     border-color: var(--corErro);
+}
+
+
+/* Footer */
+footer
+{
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: auto;
 }
